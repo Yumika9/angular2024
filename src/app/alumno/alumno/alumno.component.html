@@ -1,0 +1,20 @@
+<p>alumno works!</p>
+<h1>{{ title}}</h1>
+<dl>
+    <dt>Nombre</dt>
+    <dd>{{ nombre }}</dd>
+    <dt>Edad</dt>
+    <dd>{{ edad }}</dd>
+    <dt>N° Control</dt>
+    <dd>{{ noControl }}</dd>
+    <dt>Direccion</dt>
+    <dd>{{ direccion }}</dd>
+</dl>
+
+<button *ngIf="nombre !=Esteban"
+ (click)="editName()" class="btn btn-primary mx-2" >
+ Editar Nombre</button>
+
+<button (click)="editEdad()" class="btn btn-second mx-2">Editar Edad</button>
+
+<button (click)="reset()" class="btn btn-primary mx-2">Reset</button>
